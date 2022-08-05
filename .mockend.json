@@ -1,25 +1,26 @@
 {
   "Product": {
-    "id": {"int": {}},
+    "id": { "int": {} },
     "name": { "string": {} },
-    "creationDate: {
-      "dateTime": {
-       "min": "2010-01-01T00:00:00Z",
-       "max": "2020-12-31T23:59:59Z"
-     }},
+    "creationDate": {
+        "dateTime" : {
+            "min": "2020-01-01T00:00:00Z",
+            "max": "2022-12-31T23:59:59Z"
+        }
+    },
     "categories": {
       "hasMany": "Category"
     },
-  "price": {"decimal": {}}
+    "price": { "decimal": {} }
   },
   "Category": {
-    {
-  "id": 0,
-  "name": { "string": {} },
-  "creationDate": {
-       "min": "2010-01-01T00:00:00Z",
-       "max": "2020-12-31T23:59:59Z"
-     }},
+    "id": { "int": {} },
+    "name": { "string": {} },
+    "creationDate": {
+        "dateTime" : {
+            "min": "2020-01-01T00:00:00Z",
+            "max": "2022-12-31T23:59:59Z"
+        }
     }
   }
 }
