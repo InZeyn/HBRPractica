@@ -1,0 +1,14 @@
+{
+  "Product": {
+    "name": { "string": {} },
+    "categories": {
+      "hasMany": "Category"
+    }
+  },
+  "Category": {
+    "name": { "string": {} },
+    "product": {
+      "hasMany": "Product"
+    }
+  }
+}
