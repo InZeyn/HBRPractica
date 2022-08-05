@@ -1,14 +1,14 @@
 {
-  "Product": {
-    "name": { "string": {} },
-    "categories": {
-      "hasMany": "Category"
+  "Post": {
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
     }
   },
-  "Category": {
-    "name": { "string": {} },
-    "product": {
-      "hasMany": "Product"
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
     }
   }
 }
